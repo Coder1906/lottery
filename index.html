@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>抽奖活动</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
+    </head>
+    <style>
+        body {
+            font-size: 14px;
+            margin: 0px;
+        }
+        h1 {
+            text-align: center;
+            line-height: 100px;
+            height: 100px
+        }
+        .lottery {
+            height: 50px;
+            text-align: center;
+        }
+    </style>
+    <body>
+        <h1>
+            没有UI的抽奖活动页面
+        </h1>
+        <div class="lottery">
+            <div class="lottery-box">
+
+            </div>
+            <div class="lottery-form">
+                <input value="0" placeholder="请输入中奖人数" id="num">
+                <button type="button" onclick="start()">抽奖</button>
+            </div>
+        </div>
+    </body>
+    <script>
+        var user = [{
+            name: '阿一',
+            avatar: ''
+        },{
+            name: '阿二',
+            avatar: ''
+        },{
+            name: '阿三',
+            avatar: ''
+        },{
+            name: '阿四',
+            avatar: ''
+        },{
+            name: '阿五',
+            avatar: ''
+        },{
+            name: '阿六',
+            avatar: ''
+        }];
+        function start () {
+            var num = document.querySelector("#num").value;
+            if (!num) {
+                return alert('请输入中奖人数');
+            }
+        }
+    </script>
+</html>
